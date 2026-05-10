@@ -100,7 +100,6 @@ pipeline {
                 script {
                     sh '''
                     rm -Rf .kube
-		    mkdir /test
                     mkdir .kube
                     cat $KUBECONFIG > .kube/config
                     cp fastapi/values.yaml values.yml
